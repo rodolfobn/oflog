@@ -1,5 +1,6 @@
 dash
 plotly.express
+flask
 dash.exceptions
 pandas
 gunicorn
