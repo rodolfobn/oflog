@@ -10,6 +10,7 @@ df = pd.read_csv('adult_social_care.csv')
 # Initialize the Dash app
 app = dash.Dash(__name__)
 
+server = app.server
     
 # Define the app layout with navigation
 app.layout = html.Div([
