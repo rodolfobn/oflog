@@ -1,16 +1,18 @@
 import dash
 from dash import html, dcc, dash_table, Input, Output
 import pandas as pd
+from flask import Flask
 from dash.exceptions import PreventUpdate
 import plotly.express as px
 
 # Load data
 df = pd.read_csv('adult_social_care.csv')
 
-# Initialize the Dash app
-app = dash.Dash(__name__)
+# Initialize the Dash app and Server
+server = Flask(__name__)
+app = dash.Dash(__name__, server=server)
 
-server = app.server
+
     
 # Define the app layout with navigation
 app.layout = html.Div([
