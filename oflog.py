@@ -5,7 +5,7 @@ from dash.exceptions import PreventUpdate
 import plotly.express as px
 
 # Load data
-df = pd.read_csv('C:/Users/RodolfoBoni/Downloads/adult_social_care.csv')
+df = pd.read_csv('/adult_social_care.csv')
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
